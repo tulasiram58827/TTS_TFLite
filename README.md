@@ -12,6 +12,8 @@ This repository is a collection of TTS Models in TFLite
 
 ### TTS Models InProgress
 
+- `Tactron`
+- `FastSpeech`
 - `FastSpeech2`
 - `Glow-TTS`
 
@@ -19,3 +21,4 @@ This repository is a collection of TTS Models in TFLite
 
 - `MelGAN`
 - `Parallel WaveGAN`
+- `HiFi-GAN`
