@@ -10,14 +10,14 @@ This repository is a collection of TTS Models in TFLite
 
 - `MB-MELGAN`
 
-### TTS Models InProgress
+### TTS Models In Progress
 
 - `Tactron`
 - `FastSpeech`
 - `FastSpeech2`
 - `Glow-TTS`
 
-### Vocoder Models InProgress
+### Vocoder Models In Progress
 
 - `MelGAN`
 - `Parallel WaveGAN`
