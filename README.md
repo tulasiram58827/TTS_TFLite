@@ -1,23 +1,23 @@
 # TTS_TFLite
-This repository is a collection of TTS Models in TFLite
+This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite(TFLite).
 
 
 ### TTS Models Available
 
-- `Tactron2`
+- `Tacotron2`
 
 ### Vocoder Models Available
 
 - `MB-MELGAN`
 
-### TTS Models InProgress
+### TTS Models In Progress
 
-- `Tactron`
+- `Tacotron`
 - `FastSpeech`
 - `FastSpeech2`
 - `Glow-TTS`
 
-### Vocoder Models InProgress
+### Vocoder Models In Progress
 
 - `MelGAN`
 - `Parallel WaveGAN`
