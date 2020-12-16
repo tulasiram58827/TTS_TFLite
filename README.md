@@ -1,6 +1,6 @@
 # TTS_TFLite
-This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite(TFLite).
 
+This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite(TFLite).
 
 ### TTS Models Available
 
