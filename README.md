@@ -9,6 +9,7 @@ This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite
 ### Vocoder Models Available
 
 - `MB-MELGAN`
+- `Parallel WaveGAN`
 
 ### TTS Models In Progress
 
@@ -20,5 +21,4 @@ This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite
 ### Vocoder Models In Progress
 
 - `MelGAN`
-- `Parallel WaveGAN`
 - `HiFi-GAN`
