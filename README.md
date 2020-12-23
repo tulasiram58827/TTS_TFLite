@@ -7,6 +7,7 @@ This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite
 ### TTS Models Available
 
 - `Tacotron2`
+- `FastSpeech2`
 
 ### Vocoder Models Available
 
@@ -18,7 +19,6 @@ This repository is a collection of text-to-speech(TTS) Models in TensorFlow Lite
 
 - `Tacotron`
 - `FastSpeech`
-- `FastSpeech2`
 - `Glow-TTS`
 
 ### Vocoder Models In Progress
