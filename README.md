@@ -43,12 +43,12 @@ After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.
 | MelGAN           | Float16          | 8.3                 | 0.52                                    | 89                        |
 | MB MelGAN        | Dynamic-range    | 17                  | 0.02                                    | 17                        |
 | Tacotron2        | Dynamic-range    | 30.1                | 1.66                                    | 75                        |
-| FastSpeech2      | Dynamic-range    | 30                  | 0.11                                    | 55                        |
+| Fastspeech2      | Dynamic-range    | 30                  | 0.11                                    | 55                        |
 
 **Notes**:
 
 - All the models above support dynamic shaped inputs. However, benchmarking dynamic input size MelGAN models is not currently supported. So to benchmark those models we used inputs of shape (100, 80).
-- Similary for Fastspeech2 benchmarking dynamic input size model is erroring out. So to benchmark we used inputs of shape (1, 50) where 50 represents number of tokens.
+- Similary for Fastspeech2 benchmarking dynamic input size model is erroring out. So to benchmark we used inputs of shape (1, 50) where 50 represents number of tokens. [This issue thread](https://github.com/tensorflow/tensorflow/issues/45986) provides more details. 
 
 
 ## References
