@@ -1,4 +1,4 @@
-This repository provides a collection of widely popular text-to-speech (TTS) in TensorFlow Lite (TFLite). These models primarily come from two repositories - [TTS](https://github.com/mozilla/TTS) and [TensorFlowTTS](https://github.com/TensorSpeech/TensorFlowTTS). We provide end-to-end Colab Notebooks that show the model conversion and inference process using TFLite. This includes converting PyTorch models to TFLite as well. 
+This repository provides a collection of widely popular text-to-speech (TTS) models in TensorFlow Lite (TFLite). These models primarily come from two repositories - [TTS](https://github.com/mozilla/TTS) and [TensorFlowTTS](https://github.com/TensorSpeech/TensorFlowTTS). We provide end-to-end Colab Notebooks that show the model conversion and inference process using TFLite. This includes converting PyTorch models to TFLite as well. 
 
 TTS is a two-step process - first you generate a MEL spectrogram using a TTS model and then you pass it to a VOCODER for generating the audio waveform.  We include both of these models inside this repository.  
 
