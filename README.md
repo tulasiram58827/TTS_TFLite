@@ -48,7 +48,7 @@ After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.
 **Notes**:
 
 - All the models above support dynamic shaped inputs. However, benchmarking dynamic input size MelGAN models is not currently supported. So to benchmark those models we used inputs of shape (100, 80).
-- Benchmarking of the Fastspeech2 models is currently erroring out. 
+- Similary for Fastspeech2 benchmarking dynamic input size model is erroring out. So to benchmark we used inputs of shape (1, 50) where 50 represents number of tokens.
 
 
 ## References
