@@ -49,6 +49,8 @@ After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.
 | MelGAN           | Dynamic-range    | 17                  | 0.51                                    | 81                        |
 | MelGAN           | Float16          | 8.3                 | 0.52                                    | 89                        |
 | MB MelGAN        | Dynamic-range    | 17                  | 0.02                                    | 17                        |
+| HiFi-GAN         | Dynamic-range    | 3.5                 | 0.0015                                  | 9.88                      |
+| HiFi-GAN         | Float16          | 2.9                 | 0.0036                                  | 20.3                      | 
 | Tacotron2        | Dynamic-range    | 30.1                | 1.66                                    | 75                        |
 | Fastspeech2      | Dynamic-range    | 30                  | 0.11                                    | 55                        |
 
