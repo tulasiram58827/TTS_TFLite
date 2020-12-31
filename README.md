@@ -23,10 +23,10 @@ In the future, we may add more models.
 
 <small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/mozilla/TTS/issues/608)). </small>
 
-**Note:**
+**Notes:**
 
-- Training data used for HiFi-GAN(mel generation) is different w.r.t other models like Tacotron2, FastSpech2. So it is not compatible with the other architectures available in the repo.
-- If you want to use HiFi-GAN in end-to-end scenario you can refer to this [notebook](https://github.com/jaywalnut310/glow-tts/blob/master/inference_hifigan.ipynb). In future we are planning to make it compatible with other architectures and add it in our end-to-end notebook. Stay tuned!
+- Training data used for HiFi-GAN (MEL spectogram generation) is different w.r.t other models like Tacotron2, FastSpech2. So it is not compatible with the other architectures available in the repo.
+- If you want to use HiFi-GAN in end-to-end scenario you can refer to this [notebook](https://github.com/jaywalnut310/glow-tts/blob/master/inference_hifigan.ipynb). In future we are planning to make it compatible with other architectures and add it in our [end-to-end notebook](https://github.com/tulasiram58827/TTS_TFLite/blob/main/End_to_End_TTS.ipynb). Stay tuned!
 
 ## About the Notebooks
 - `End_to_End_TTS.ipynb`: This notebook allows you to load up different TTS and VOCODER models (enlisted above) and to perform inference. 
