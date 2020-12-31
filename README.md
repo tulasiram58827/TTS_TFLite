@@ -42,17 +42,17 @@ Model conversion processes for Tacotron2, Fastspeech2, and Multi-Band MelGAN are
 
 After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.org/lite/performance/measurement) in order to report performance metrics of the various models such as inference latency, peak memory usage. We used Redmi K20 for this purpose. For all the experiments we kept the number of threads to one and we used the CPU of Redmi K20 and no other hardware accelerator. 
 
-| **Model**        | **Quantization** | **Model Size (MB)** | **Average Inference Latency (seconds)** | **Memory Footprint (MB)** |
-| ---------------- | ---------------- | ------------------- | --------------------------------------- | ------------------------- |
-| Parallel WaveGAN | Dynamic-range    | 5.7                 | 0.04                                    | 31.5                      |
-| Parallel WaveGAN | Float16          | 3.2                 | 0.05                                    | 34                        |
-| MelGAN           | Dynamic-range    | 17                  | 0.51                                    | 81                        |
-| MelGAN           | Float16          | 8.3                 | 0.52                                    | 89                        |
-| MB MelGAN        | Dynamic-range    | 17                  | 0.02                                    | 17                        |
-| HiFi-GAN         | Dynamic-range    | 3.5                 | 0.0015                                  | 9.88                      |
-| HiFi-GAN         | Float16          | 2.9                 | 0.0036                                  | 20.3                      | 
-| Tacotron2        | Dynamic-range    | 30.1                | 1.66                                    | 75                        |
-| Fastspeech2      | Dynamic-range    | 30                  | 0.11                                    | 55                        |
+| **Model**        | **Quantization** | **Model Size (MB)** | **Average Inference Latency (sec)** | **Memory Footprint (MB)** |
+| ---------------- | ---------------- | :-----------------: | :----------------------------------:| :-----------------------: |
+| Parallel WaveGAN | Dynamic-range    | 5.7                 | 0.04                                | 31.5                      |
+| Parallel WaveGAN | Float16          | 3.2                 | 0.05                                | 34                        |
+| MelGAN           | Dynamic-range    | 17                  | 0.51                                | 81                        |
+| MelGAN           | Float16          | 8.3                 | 0.52                                | 89                        |
+| MB MelGAN        | Dynamic-range    | 17                  | 0.02                                | 17                        |
+| HiFi-GAN         | Dynamic-range    | 3.5                 | 0.0015                              | 9.88                      |
+| HiFi-GAN         | Float16          | 2.9                 | 0.0036                              | 20.3                      | 
+| Tacotron2        | Dynamic-range    | 30.1                | 1.66                                | 75                        |
+| Fastspeech2      | Dynamic-range    | 30                  | 0.11                                | 55                        |
 
 **Notes**:
 
