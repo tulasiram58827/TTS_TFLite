@@ -17,18 +17,18 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
     - [x] [MelGAN](https://arxiv.org/abs/1910.06711)
     - [x] [Multi-Band MelGAN](https://arxiv.org/abs/2005.05106) (MB MelGAN)
     - [x] [Parallel WaveGAN](https://arxiv.org/abs/1910.11480)
-    - [ ] [HiFi-GAN](https://arxiv.org/pdf/2010.05646.pdf)**
+    - [x] [HiFi-GAN](https://arxiv.org/pdf/2010.05646.pdf)
 
 In the future, we may add more models.
 
 <small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/mozilla/TTS/issues/608)). </small>
 
-** Conversion of HiFi-GAN is in progress.
 
 ## About the Notebooks
 - `End_to_End_TTS.ipynb`: This notebook allows you to load up different TTS and VOCODER models (enlisted above) and to perform inference. 
 - `MelGAN_TFLite.ipynb`: Shows the model conversion process of MelGAN. 
 - `Parallel_WaveGAN_TFLite.ipynb`: Shows the model conversion process of Parallel WaveGAN. 
+- `HiFi-GAN.ipynb`: Shows the model conversion process of HiFi-GAN.
 
 Model conversion processes for Tacotron2, Fastspeech2, and Multi-Band MelGAN are available via the following notebooks:
 
