@@ -2,7 +2,7 @@ This repository provides a collection of widely popular text-to-speech (TTS) mod
 
 TTS is a two-step process - first you generate a MEL spectrogram using a TTS model and then you pass it to a VOCODER for generating the audio waveform.  We include both of these models inside this repository.  
 
-**Note** that these models are trained on [LJSpeech dataset](https://www.tensorflow.org/datasets/catalog/ljspeech) (except for the HiFi-GAN model).
+**Note** that these models are trained on [LJSpeech dataset](https://www.tensorflow.org/datasets/catalog/ljspeech).
 
 [Here’s a sample result](https://storage.googleapis.com/demo-experiments/demo_tts.wav) (with Fastspeech2 and MelGAN) for the text “Bill got in the habit of asking himself".
 
