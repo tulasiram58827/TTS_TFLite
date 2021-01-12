@@ -22,7 +22,7 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
 
 In the future, we may add more models.
 
-<small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/mozilla/TTS/issues/608)). </small>
+<small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/pytorch/pytorch/issues/50009)). </small>
 
 **Notes:**
 
