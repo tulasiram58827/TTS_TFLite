@@ -13,6 +13,7 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
     - [x] [Tacotron2](https://github.com/NVIDIA/tacotron2)
     - [x] [Fastspeech2](https://arxiv.org/abs/2006.04558)
     - [ ] [Glow TTS](https://arxiv.org/abs/2005.11129)*
+    - [ ] [Transformer TTS](https://arxiv.org/abs/1809.08895)
 - VOCODER:
     - [x] [MelGAN](https://arxiv.org/abs/1910.06711)
     - [x] [Multi-Band MelGAN](https://arxiv.org/abs/2005.05106) (MB MelGAN)
