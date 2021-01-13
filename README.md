@@ -62,7 +62,7 @@ After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.
 
 ## Audio Samples
 
-All combination of samples are available in `audio_samples` folder.
+All combination of samples are available in `audio_samples` folder. To listen directly without downloading refer to this [Sound Cloud](https://soundcloud.com/tulasi-ram-887761209) folder.
 
 ## References
 - [Dynamic-range quantization in TensorFlow Lite](https://www.tensorflow.org/lite/performance/post_training_quant)
