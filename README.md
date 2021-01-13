@@ -13,6 +13,7 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
     - [x] [Tacotron2](https://github.com/NVIDIA/tacotron2)
     - [x] [Fastspeech2](https://arxiv.org/abs/2006.04558)
     - [ ] [Glow TTS](https://arxiv.org/abs/2005.11129)*
+    - [ ] [Transformer TTS](https://arxiv.org/abs/1809.08895)
 - VOCODER:
     - [x] [MelGAN](https://arxiv.org/abs/1910.06711)
     - [x] [Multi-Band MelGAN](https://arxiv.org/abs/2005.05106) (MB MelGAN)
@@ -21,11 +22,11 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
 
 In the future, we may add more models.
 
-<small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/mozilla/TTS/issues/608)). </small>
+<small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/pytorch/pytorch/issues/50009)). </small>
 
 **Notes:**
 
-- Training data used for HiFi-GAN (MEL spectogram generation) is different w.r.t other models like Tacotron2, FastSpech2. So it is not compatible with the other architectures available in the repo.
+- Training data used for HiFi-GAN (MEL spectogram generation) is different w.r.t other models like Tacotron2, FastSpech2. So it is not compatible with the other architectures available inside this repo.
 - If you want to use HiFi-GAN in end-to-end scenario you can refer to this [notebook](https://github.com/jaywalnut310/glow-tts/blob/master/inference_hifigan.ipynb). In future we are planning to make it compatible with other architectures and add it in our [end-to-end notebook](https://github.com/tulasiram58827/TTS_TFLite/blob/main/End_to_End_TTS.ipynb). Stay tuned!
 
 ## About the Notebooks
@@ -42,17 +43,17 @@ Model conversion processes for Tacotron2, Fastspeech2, and Multi-Band MelGAN are
 
 After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.org/lite/performance/measurement) in order to report performance metrics of the various models such as inference latency, peak memory usage. We used Redmi K20 for this purpose. For all the experiments we kept the number of threads to one and we used the CPU of Redmi K20 and no other hardware accelerator. 
 
-| **Model**        | **Quantization** | **Model Size (MB)** | **Average Inference Latency (seconds)** | **Memory Footprint (MB)** |
-| ---------------- | ---------------- | ------------------- | --------------------------------------- | ------------------------- |
-| Parallel WaveGAN | Dynamic-range    | 5.7                 | 0.04                                    | 31.5                      |
-| Parallel WaveGAN | Float16          | 3.2                 | 0.05                                    | 34                        |
-| MelGAN           | Dynamic-range    | 17                  | 0.51                                    | 81                        |
-| MelGAN           | Float16          | 8.3                 | 0.52                                    | 89                        |
-| MB MelGAN        | Dynamic-range    | 17                  | 0.02                                    | 17                        |
-| HiFi-GAN         | Dynamic-range    | 3.5                 | 0.0015                                  | 9.88                      |
-| HiFi-GAN         | Float16          | 2.9                 | 0.0036                                  | 20.3                      | 
-| Tacotron2        | Dynamic-range    | 30.1                | 1.66                                    | 75                        |
-| Fastspeech2      | Dynamic-range    | 30                  | 0.11                                    | 55                        |
+| **Model**        | **Quantization** | **Model Size (MB)** | **Average Inference Latency (sec)** | **Memory Footprint (MB)** |
+| ---------------- | ---------------- | :-----------------: | :----------------------------------:| :-----------------------: |
+| Parallel WaveGAN | Dynamic-range    | 5.7                 | 0.04                                | 31.5                      |
+| Parallel WaveGAN | Float16          | 3.2                 | 0.05                                | 34                        |
+| MelGAN           | Dynamic-range    | 17                  | 0.51                                | 81                        |
+| MelGAN           | Float16          | 8.3                 | 0.52                                | 89                        |
+| MB MelGAN        | Dynamic-range    | 17                  | 0.02                                | 17                        |
+| HiFi-GAN         | Dynamic-range    | 3.5                 | 0.0015                              | 9.88                      |
+| HiFi-GAN         | Float16          | 2.9                 | 0.0036                              | 20.3                      | 
+| Tacotron2        | Dynamic-range    | 30.1                | 1.66                                | 75                        |
+| Fastspeech2      | Dynamic-range    | 30                  | 0.11                                | 55                        |
 
 **Notes**:
 
