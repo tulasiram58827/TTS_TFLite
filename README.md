@@ -60,6 +60,9 @@ After converting to TFLite, we used the [Benchmark tool](https://www.tensorflow.
 - All the models above support dynamic shaped inputs. However, benchmarking dynamic input size MelGAN models is not currently supported. So to benchmark those models we used inputs of shape (100, 80).
 - Similary for Fastspeech2 benchmarking dynamic input size model is erroring out. So to benchmark we used inputs of shape (1, 50) where 50 represents number of tokens. [This issue thread](https://github.com/tensorflow/tensorflow/issues/45986) provides more details. 
 
+## Audio Samples
+
+All combination of samples are available in `audio_samples` folder.
 
 ## References
 - [Dynamic-range quantization in TensorFlow Lite](https://www.tensorflow.org/lite/performance/post_training_quant)
