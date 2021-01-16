@@ -12,8 +12,8 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
 - TTS:
     - [x] [Tacotron2](https://github.com/NVIDIA/tacotron2)
     - [x] [Fastspeech2](https://arxiv.org/abs/2006.04558)
+    - [x] [Forward Tacotron](https://github.com/as-ideas/ForwardTacotron)
     - [ ] [Glow TTS](https://arxiv.org/abs/2005.11129)*
-    - [ ] [Forward Tacotron](https://github.com/as-ideas/ForwardTacotron)**
     - [ ] [Transformer TTS](https://arxiv.org/abs/1809.08895)
 - VOCODER:
     - [x] [MelGAN](https://arxiv.org/abs/1910.06711)
@@ -25,7 +25,7 @@ In the future, we may add more models.
 
 <small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/pytorch/pytorch/issues/50009)). </small>
 
-** Currently, Forward Tacotron only supports ONNX Conversion. There is a problem while converting to TensorFlow Graph Format. (Refer to this [issue](https://github.com/onnx/onnx-tensorflow/issues/853) for more details).
+Currently, **Forward Tacotron** only supports ONNX Conversion. There is a problem while converting to TensorFlow Graph Format. (Refer to this [issue](https://github.com/onnx/onnx-tensorflow/issues/853) for more details).
 
 **Notes:**
 
