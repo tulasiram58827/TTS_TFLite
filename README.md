@@ -13,6 +13,7 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
     - [x] [Tacotron2](https://github.com/NVIDIA/tacotron2)
     - [x] [Fastspeech2](https://arxiv.org/abs/2006.04558)
     - [ ] [Glow TTS](https://arxiv.org/abs/2005.11129)*
+    - [ ] [Forward Tacotron](https://github.com/as-ideas/ForwardTacotron)**
     - [ ] [Transformer TTS](https://arxiv.org/abs/1809.08895)
 - VOCODER:
     - [x] [MelGAN](https://arxiv.org/abs/1910.06711)
@@ -23,6 +24,7 @@ TTS is a two-step process - first you generate a MEL spectrogram using a TTS mod
 In the future, we may add more models.
 
 <small> *Currently, conversion of the Glow TTS model is unavailable (refer to the issue [here](https://github.com/pytorch/pytorch/issues/50009)). </small>
+** Currently, Forward Tacotron only supports ONNX Conversion. There is a problem while converting to TensorFlow Graph Format. (Refer tot this [issue](https://github.com/onnx/onnx-tensorflow/issues/853) for more details).
 
 **Notes:**
 
@@ -34,6 +36,7 @@ In the future, we may add more models.
 - `MelGAN_TFLite.ipynb`: Shows the model conversion process of MelGAN. 
 - `Parallel_WaveGAN_TFLite.ipynb`: Shows the model conversion process of Parallel WaveGAN. 
 - `HiFi-GAN.ipynb`: Shows the model conversion process of HiFi-GAN.
+- `Forward_Tacotron_PyTorch_TFLite.ipynb` : Converts Forward Tacotron model to ONNX. In future it will be updated to support TFLite conversion.
 
 Model conversion processes for Tacotron2, Fastspeech2, and Multi-Band MelGAN are available via the following notebooks:
 
